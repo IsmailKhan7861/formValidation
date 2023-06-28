@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.padding-items {
+  padding: 50px 30px 50px 60px;
+}
+.container {
+  display: flex;
+  box-shadow: 0px 0px 10px 1px;
+  margin: auto;
+  margin: 100px 200px 100px 200px;
+}
+.container .left {
+  background-color: #5712b3;
+  color: #ffffff;
+  flex-basis: 50%;
+}
+.container .left .send-message,
+.container .right .contact-us {
+  font-size: 2rem;
+}
+.container .left form {
+  padding-top: 20px;
+}
+.container .left input,
+.container .left textarea {
+  background: transparent;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #808080;
+  width: 100%;
+}
+.container .left #btnSubmit {
+  background-color: #a83277;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  border-style: none;
+}
+.container .right {
+  color: #000000;
+}
+.container .right .contact-us {
+  border-bottom: 2px solid #5712b3;
+}
