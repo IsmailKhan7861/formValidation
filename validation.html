@@ -19,10 +19,12 @@
         <form novalidate>
           <div>
             <input type="text" id="txtName" class="box" placeholder="Name" />
+            <div class="para"></div>
           </div>
 
           <div>
             <input type="text" id="txtEmail" class="box" placeholder="Email" />
+            <div class="para"></div>
           </div>
 
           <div>
@@ -32,10 +34,13 @@
               class="box"
               placeholder="Mobile"
             />
+
+            <div class="para"></div>
           </div>
 
           <div>
-            <textarea rows="5" placeholder="Message"></textarea>
+            <textarea rows="5" placeholder="Message" id="txtMsg"></textarea>
+            <div class="para"></div>
           </div>
 
           <button type="submit" id="btnSubmit">Send Message</button>
@@ -71,5 +76,7 @@
         </div>
       </div>
     </div>
+
+    <script src="validation.js"></script>
   </body>
 </html>

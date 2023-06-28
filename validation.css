@@ -32,11 +32,14 @@ html {
 .container .left input,
 .container .left textarea {
   background: transparent;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   border: none;
   border-bottom: 2px solid #808080;
   width: 100%;
+  color: #ffffff;
+  outline: none;
 }
+
 .container .left #btnSubmit {
   background-color: #a83277;
   color: #ffffff;
@@ -72,4 +75,9 @@ html {
 }
 .container .right .details b {
   color: #000000;
+}
+
+.para {
+  font-size: 1.3rem;
+  color: #a83277;
 }
