@@ -50,3 +50,26 @@ html {
 .container .right .contact-us {
   border-bottom: 2px solid #5712b3;
 }
+
+.container .right .para {
+  color: #808080;
+  width: 90%;
+}
+.container .right .main-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.container .right .details {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.container .right .details p {
+  color: #808080;
+}
+.container .right .details b {
+  color: #000000;
+}
