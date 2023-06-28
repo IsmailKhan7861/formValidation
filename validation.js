@@ -16,6 +16,7 @@ let validateName = () => {
 };
 
 //validate Mobile
+let regexMobile = /^[0-9]*$/;
 let validateMobile = () => {
   if (txtMobile.value == "") {
     txtMobile.nextElementSibling.textContent = "Please Enter Mobile Number";
@@ -23,6 +24,9 @@ let validateMobile = () => {
   } else if (txtMobile.value.length != 10) {
     txtMobile.nextElementSibling.textContent =
       "Please Enter Valid mobile Number";
+    return false;
+  } else if (!regexMobile.test(txtMobile.value)) {
+    txtMobile.nextElementSibling.textContent = "Please Enter Valid Number1";
     return false;
   } else {
     txtMobile.nextElementSibling.textContent = "";
@@ -69,10 +73,10 @@ const isValidAll = () => {
   return isName && isMobile && isEmail && isMsg;
 };
 
-txtName.addEventListener("keyup", validateName);
-txtEmail.addEventListener("keyup", validateEmail);
-txtMobile.addEventListener("keyup", validateMobile);
-txtMobile.addEventListener("keyup", validateMessage);
+txtName.addEventListener("focusout", validateName);
+txtEmail.addEventListener("focusout", validateEmail);
+txtMobile.addEventListener("focusout", validateMobile);
+txtMobile.addEventListener("focusout", validateMessage);
 
 //for keyup automatic message
 btnSubmit.addEventListener("click", (e) => {
